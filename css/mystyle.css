@@ -83,3 +83,48 @@
   border-radius: 20px;
   filter:grayscale(1);
 }
+
+/* ex 10 */
+.ex-10-icon {
+  animation: ruota;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes ruota {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-359deg);
+  }
+}
+
+/* ex 11 */
+.ex-11-icon {
+  animation: rotate;
+  animation-duration: 2s;
+  animation-play-state: paused;
+}
+
+.ex-11-icon:hover {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
